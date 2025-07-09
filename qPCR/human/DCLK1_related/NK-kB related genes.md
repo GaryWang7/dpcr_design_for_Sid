@@ -14,6 +14,17 @@ Selected genes:
 - Inhibitors: IKK1
 - Apoptosis: TP53 
   
+# Design Principles
+Generally all primers from papers are validated using Primer Blast. When I design the primers, I usually use Primer Blast, and follow the below principles:
+- For genes with multiple isoforms, I try to limit the forward and reverse primers to fall within the protein coding region (CDS) or common region of the isoforms. The range can be found by clicking into "Fastq" record of a transcript in NCBI, and then clicking into "Graphics".
+- PCR product size: 100-200 bp.
+- Primer melting temperature (Tm): 58-62 °C. Max Tm difference: 1 °C.
+- \# of primers to return: set so that we can select primers that are either spanning exon-exon junctions or separated by introns.
+- Search in the Refseq mRNA of the species we are designing primers for. Exclude uncultured/environmental sample sequences.
+- Primer size: 16-24. Opt 20
+- Primer GC content: 40-60%
+- Max self complementarity: 5
+- Max self 3' complementarity: 5
 
 # Human primers
 ## Receptors: TNSFRSF1A, IL1R1
